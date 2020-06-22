@@ -1,0 +1,8 @@
+<h1>New Year Countdown</h1>
+
+<button (click)="startCountdown()" [disabled]="countdownStarted">Start countdown</button> &nbsp;
+<button (click)="stopCountdown()" [disabled]="!countdownStarted">Stop countdown</button>
+
+<div>
+  <h3>Countdown: {{currentCount || countdownStatus }}</h3>
+</div>
